@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
-
+mongoose.set('strictQuery', false)
 const dataSchema = new mongoose.Schema({
     name:{type:'string',required:true},
     email:{
