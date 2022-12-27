@@ -14,7 +14,6 @@ router.get('/', function(req, res, next) {
 router.post('/post-data/', async(req,res) => {
   try {
     let details = await dataModel.create(req.body)
-    console.log(details)
     res.send({
       statusCode : 200,
       message : "data added successfully"
